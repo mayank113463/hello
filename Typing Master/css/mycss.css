@@ -1,0 +1,92 @@
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* ****************************My CSS********************************************* */
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+.modal-header,.modal-header h4,.modal-header .close {
+    background-color: #5cb85c;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
+.thumbnail {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    min-width: 0%;
+    border-radius: 5px;
+  }
+ 
+  .thumbnail-description {
+    min-height: 40px;
+  }
+ 
+  .thumbnail:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+  }
+.fa-users, .fa-keyboard, .fa-rupee-sign{
+    font-size: 60px;
+    color: #fff;
+}
+.panel-body span{
+    font-size: 2rem;
+}
+.panel-body h2{
+    font-size: 5rem;
+}
+.panel-body i{
+    font-size: 2rem;
+    color: #000000;
+}
+.text-success{
+    color:#3acab1!important;
+}
+.btn-green{
+    background-color: #3acab1;
+    color: black;
+}
+
+.text-white{
+    color: white;
+}
+.bg-white{
+    padding:0px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #cbc8c8;
+    cursor: pointer;
+}
+.bg-white .col-sm-12{
+    margin-bottom: 3%;
+}
+
+nav{
+    margin-bottom: 0px!important;
+    border-radius: 0px!important;
+}
+
+nav ul li a:hover{
+    color:#3acab1!important;
+}

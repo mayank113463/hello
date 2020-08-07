@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+		<title>Typing Master</title>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/timer.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/mycss.css">
+
+
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css" integrity="sha512-8jdwayz5n8F2cnW26l9vpV6+yGOcRAqz6HTu+DQ3FtVIAts2gTdlFZOGpYhvBMXkWEgxPN3Y22UWyZXuDowNLA==" crossorigin="anonymous" /> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" /> -->
+	</head>
+
+
+	<body>
+
+		<!-- NavBar -->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+			  <div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+				  </button>
+					<a class="navbar-brand text-success" href="index.html">TYPING MASTER</a>
+			  </div>
+			  <div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav">
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="about.html">About</a></li>
+					  <li><a href="contact.html">Contact</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-right">
+					  <li><a><button type="button" class="btn btn-green btn-sm" id="myBtn2"><span class="fas fa-mobile"></span> Sign Up</button></a></li>
+					  <li><a><button type="button" class="btn btn-green btn-sm" id="myBtn"><span class="fas fa-sign-in-alt"></span> Log In</button></a></li>
+					</ul>
+				</div>
+			</div>   
+		  </nav>
+  
+  <!-- ************************Sign up Form************************ -->
+  <div class="modal fade" id="myModal2" role="dialog">
+	  <div class="modal-dialog">
+  
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			  <div class="modal-header" style="padding:35px 50px;">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4><span class="fas fa-lock"></span> Create Account</h4>
+			  </div>
+			  <div class="modal-body" style="padding:40px 50px;">
+				  <form role="form">
+					  <div class="form-group">
+						  <label for="name"><span class="fas fa-user"></span> Name</label>
+						  <input type="text" class="form-control" id="name" placeholder="Enter Full Name">
+					  </div>
+					  <div class="form-group">
+						  <label for="email"><span class="fas fa-envelope"></span> Email</label>
+						  <input type="email" class="form-control" id="email" placeholder="Enter Email">
+					  </div>
+					  <div class="form-group">
+						  <label for="mobile"><span class="fas fa-phone"></span> Mobile</label>
+						  <input type="number" class="form-control" id="mobile" placeholder="Enter Mobile Number">
+					  </div>
+					  <div class="form-group">
+						  <label for="psw"><span class="fas fa-key"></span> Password</label>
+						  <input type="password" class="form-control" id="psw" placeholder="Enter password">
+					  </div>
+					  <div class="checkbox">
+						  <label><input type="checkbox" value="" checked>Remember me</label>
+					  </div>
+					  <button type="submit" class="btn btn-success btn-block"><span
+							  class="fas fa-power-off"></span> Create</button>
+				  </form>
+			  </div>
+			  <div class="modal-footer">
+				  <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span
+						  class="fas fa-times"></span> Cancel</button>
+				  <p>already a member? <a href="#myModal" data-toggle="modal" data-dismiss="modal">Log In</a></p>
+				  <p>Forgot <a href="#">Password?</a></p>
+			  </div>
+		  </div>
+		  <a href="#modal-2" data-toggle="modal" data-dismiss="modal">Next ></a>
+  
+	  </div>
+  </div>
+  <!-- **********************End Sign Up ************************************************ -->
+  
+  <!-- ************************Login Form************************ -->
+  <div class="modal fade" id="myModal" role="dialog">
+	  <div class="modal-dialog">
+  
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			  <div class="modal-header" style="padding:35px 50px;">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4><span class="fas fa-lock"></span> Login</h4>
+			  </div>
+			  <div class="modal-body" style="padding:40px 50px;">
+				  <form role="form">
+					  <div class="form-group">
+						  <label for="usrname"><span class="fas fa-user"></span> Username</label>
+						  <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+					  </div>
+					  <div class="form-group">
+						  <label for="psw"><span class="fas fa-key"></span> Password</label>
+						  <input type="text" class="form-control" id="psw" placeholder="Enter password">
+					  </div>
+					  <div class="checkbox">
+						  <label><input type="checkbox" value="" checked>Remember me</label>
+					  </div>
+					  <button type="submit" class="btn btn-success btn-block"><span
+							  class="fas fa-power-off"></span> Login</button>
+				  </form>
+			  </div>
+			  <div class="modal-footer">
+				  <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span
+						  class="fas fa-times"></span> Cancel</button>
+				  <p>Not a member? <a href="#myModal2" data-toggle="modal" data-dismiss="modal">Sign Up</a></p>
+				  <p>Forgot <a href="#">Password?</a></p>
+			  </div>
+		  </div>
+  
+	  </div>
+  </div>
+  <!-- **********************End Log In ************************************************ -->
+
+<!-- ************************About Start***************************************** -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="well well-sm">
+				<form class="form-horizontal" method="post">
+					<fieldset>
+						<legend class="text-center header">About us</legend>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste expedita assumenda dolores autem. Architecto, impedit dolores aliquam, rerum esse optio doloremque maiores vitae accusantium hic possimus, sit delectus deleniti!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste expedita assumenda dolores autem. Architecto, impedit dolores aliquam, rerum esse optio doloremque maiores vitae accusantium hic possimus, sit delectus deleniti!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste expedita assumenda dolores autem. Architecto, impedit dolores aliquam, rerum esse optio doloremque maiores vitae accusantium hic possimus, sit delectus deleniti!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste expedita assumenda dolores autem. Architecto, impedit dolores aliquam, rerum esse optio doloremque maiores vitae accusantium hic possimus, sit delectus deleniti!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste expedita assumenda dolores autem. Architecto, impedit dolores aliquam, rerum esse optio doloremque maiores vitae accusantium hic possimus, sit delectus deleniti!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste expedita assumenda dolores autem. Architecto, impedit dolores aliquam, rerum esse optio doloremque maiores vitae accusantium hic possimus, sit delectus deleniti!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste expedita assumenda dolores autem. Architecto, impedit dolores aliquam, rerum esse optio doloremque maiores vitae accusantium hic possimus, sit delectus deleniti!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste expedita assumenda dolores autem. Architecto, impedit dolores aliquam, rerum esse optio doloremque maiores vitae accusantium hic possimus, sit delectus deleniti!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste expedita assumenda dolores autem. Architecto, impedit dolores aliquam, rerum esse optio doloremque maiores vitae accusantium hic possimus, sit delectus deleniti!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste expedita assumenda dolores autem. Architecto, impedit dolores aliquam, rerum esse optio doloremque maiores vitae accusantium hic possimus, sit delectus deleniti!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste expedita assumenda dolores autem. Architecto, impedit dolores aliquam, rerum esse optio doloremque maiores vitae accusantium hic possimus, sit delectus deleniti!
+
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- *******************************About End************************************ -->
+
+		<!-- footer -->
+		<div class="wrapper footer">
+			<div class="container">
+				<div class="row text-center">
+					<div class="name col-lg-6 col-md-2 col-sm-2 col-xs-12 text-center">
+						<h1>Typing Master</h1>
+					</div>
+					<div class="col-lg-4 col-md-8 col-sm-8 col-xs-12 text-center">
+						<div class="copyright">
+							&copy; Copyright 2020 | All Rights are Reserved
+						</div>
+					</div>
+					<div class= "col-lg-2 col-md-2 col-sm-2 col-xs-12" id="back-top">
+						<p class= "pull-right"><a href="#home"><span></span>Top</a></p>	
+					</div>	
+				</div><!-- row -->
+			</div>
+		</div><!--end of footer -->
+	</body>
+</html>
